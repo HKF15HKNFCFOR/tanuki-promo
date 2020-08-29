@@ -15,12 +15,12 @@
 <input type="button" id="bt" value="Искать VK!" onclick="window.search_mask(document.getElementById('from').value,document.getElementById('to').value);" />
 <input type="button" value="Stop!" onclick="window.search_stop();" />
 <br>
-<div  id="down">Загрузка...<progress id="pr" value="0" max="100"></progress></div>
+<div  hidden id="down">Загрузка...<progress id="pr" value="0" max="100"></progress></div>
 <br>
 <textarea id="text" style="width:300px; height:500px;"></textarea>
 <hr>
 <input type="button" id="btc" value="Искать доступные из коллекции!" onclick="window.st_collect();" />
-<div  id="downc">Загрузка...<progress id="prc" value="0" max="10"></progress></div>
+<div  hidden id="downc">Загрузка...<progress id="prc" value="0" max="10"></progress></div>
 <br>
 <textarea id="textc" style="width:300px; height:500px;"></textarea>
 </body>

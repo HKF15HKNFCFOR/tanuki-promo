@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanuki</title>
+<script src="tanuki.js"></script>
+</head>
+<body>
+Проверить доступность промокода:
+<input type="text" id="idname" />
+<input type="button" value="Найти!" onclick="window.search(document.getElementById('idname').value);" />
+<hr>
+<p>Поиск промокодов VK</p>От:<input type="text" id="from" />До:<input type="text" id="to" />
+<input type="button" id="bt" value="Искать VK!" onclick="window.search_mask(document.getElementById('from').value,document.getElementById('to').value);" />
+<input type="button" value="Stop!" onclick="window.search_stop();" />
+<br>
+<div hidden id="down">Загрузка...<progress id="pr" value="0" max="100"></progress></div>
+<br>
+<textarea id="text"></textarea>
+<hr>
+<input type="button" id="btc" value="Искать доступные из коллекции!" onclick="window.st_collect();" />
+<div hidden id="downc">Загрузка...<progress id="prc" value="0" max="10"></progress></div>
+<br>
+<textarea id="textc"></textarea>
+</body>
+</html>
